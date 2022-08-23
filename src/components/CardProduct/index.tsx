@@ -8,26 +8,31 @@ import {
   ProductTitle,
   Value,
 } from "./styles";
-import apple from "Assets/apple.svg";
+import apple from "assets/apple.svg";
 import { FiShoppingBag } from "react-icons/fi";
 
 interface ICardProduct {
   title: string;
+  imageUrl: string;
+  price: number;
+  description: string;
 }
 
-export default function CardProduct({ title }: ICardProduct) {
+export default function CardProduct({
+  title,
+  imageUrl,
+  price,
+  description,
+}: ICardProduct) {
   return (
     <Container>
       <Products>
         <ImageProduct src={apple} alt="Relógio" />
-        {/* <img src={apple} alt="Relógio" /> */}
         <Price>
           <ProductTitle>{title}</ProductTitle>
-          <Value>R$399</Value>
+          <Value>{price}</Value>
         </Price>
-        <Description>
-          Redesigned from scratch and completely revised.
-        </Description>
+        <Description>{description}</Description>
       </Products>
       <Button>
         <FiShoppingBag /> COMPRAR

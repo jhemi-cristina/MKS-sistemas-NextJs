@@ -26,9 +26,11 @@ export const ImageProduct = styled(Image)``;
 export const ProductTitle = styled.h4`
   color: #2c2c2c;
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
   line-height: 19px;
+  min-height: 60px;
+  width: 200px;
+  text-overflow: ellipsis;
 `;
 
 export const Price = styled.div`
@@ -54,6 +56,8 @@ export const Description = styled.p`
   color: #2c2c2c;
   font-size: 12px;
   margin-top: 10px;
+  min-height: 85px;
+  border: solid 1px #000;
 `;
 
 export const Button = styled.button`
