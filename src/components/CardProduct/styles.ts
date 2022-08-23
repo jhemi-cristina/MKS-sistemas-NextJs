@@ -2,18 +2,17 @@ import styled from "styled-components";
 import Image from "next/image";
 
 export const Container = styled.div`
-  /* width: 218px;
-  height: 285px;
-  background-color: #ffff;
-  display: flex;
-  align-items: flex-end; */
   border-radius: 9px;
-  /* border: 2px solid; */
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
-  max-width: 222px;
-  min-height: 279px;
+  max-width: 250px;
+  min-height: 280px;
   align-items: flex-end;
   padding-top: 40px;
+
+  img {
+    display: block;
+    border: 1px solid #000;
+  }
 `;
 
 export const Products = styled.div`
@@ -30,12 +29,10 @@ export const ProductTitle = styled.h4`
   line-height: 19px;
   min-height: 60px;
   width: 200px;
-  text-overflow: ellipsis;
 `;
 
 export const Price = styled.div`
   display: flex;
-  align-items: center;
   justify-content: space-between;
   margin-top: 20px;
 `;
@@ -57,7 +54,6 @@ export const Description = styled.p`
   font-size: 12px;
   margin-top: 10px;
   min-height: 85px;
-  border: solid 1px #000;
 `;
 
 export const Button = styled.button`
@@ -66,7 +62,7 @@ export const Button = styled.button`
   justify-content: center;
   gap: 10px;
   background: #0f52ba;
-  width: 223px;
+  width: 250px;
   height: 33px;
   border-radius: 0px 0px 7px 7px;
   border: none;

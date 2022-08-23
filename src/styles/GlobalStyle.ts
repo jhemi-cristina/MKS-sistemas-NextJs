@@ -13,4 +13,10 @@ export default createGlobalStyle`
     font-family: 'Montserrat', sans-serif;
 
   }
+
+  img {
+    display: block;
+    border: 1px solid #000;
+  }
+
 `;
