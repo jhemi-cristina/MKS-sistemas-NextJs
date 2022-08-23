@@ -1,10 +1,12 @@
 import CardProduct from "components/CardProduct";
+import Header from "components/Header";
 // import type { NextPage } from "next";
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 // import { getProducts } from "redux/store";
 import { api } from "../services/api";
 import { Container } from "./../styles/HomeStyle";
+import Rodape from "../components/Rodape";
 // const Home: NextPage = () => {
 const Home = () => {
   const [products, setProducts] = useState([]);
@@ -29,6 +31,7 @@ const Home = () => {
 
   return (
     <Container>
+      <Header />
       {products.map((item) => (
         <CardProduct
           key={item?.id}
@@ -44,6 +47,7 @@ const Home = () => {
         />
         // console.log({ item });
       ))}
+      <Rodape />
     </Container>
   );
 };

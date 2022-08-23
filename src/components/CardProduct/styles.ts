@@ -8,11 +8,6 @@ export const Container = styled.div`
   min-height: 280px;
   align-items: flex-end;
   padding-top: 40px;
-
-  img {
-    display: block;
-    border: 1px solid #000;
-  }
 `;
 
 export const Products = styled.div`
